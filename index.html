@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Launchpad Project | Beyond Tutoring</title>
+    <style>
+        :root {
+            --primary: #0f172a; /* Deep Navy */
+            --accent: #3b82f6; /* Rocket Blue */
+            --accent-hover: #1d4ed8;
+            --text-main: #334155;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #ffffff;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #93c5fd;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Mission / Solution Section */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.25rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .section p.intro-text {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+
+        /* Grid Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border-top: 5px solid var(--accent);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.25rem; }
+            nav { flex-direction: column; gap: 1rem; }
+            nav ul li { margin: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">The Launchpad<span>Project</span></div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="program.html">Program Details</a></li>
+            <li><a href="apply.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Beyond Tutoring. Driven by Curiosity.</h1>
+        <p>We help motivated students turn their personal passions into tangible research projects and real-world community impact initiatives.</p>
+        <a href="apply.html" class="btn">Register For Next Cohort</a>
+    </header>
+
+    <section class="section text-center">
+        <h2>Ownership, Creativity, & Leadership</h2>
+        <p class="intro-text">Many students are highly capable and full of brilliant ideas, but standard school curriculums rarely give them the space to dive deep into what they truly care about. Traditional tutoring focuses on rote worksheets. We focus on real-world execution.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>💡 Driven by Passion</h3>
+                <p>Students select a topic they genuinely care about—from AI and cardiology to sports science or youth entrepreneurship—and learn how to narrow it down into a powerful core thesis.</p>
+            </div>
+            <div class="card">
+                <h3>🔍 Real Research Skills</h3>
+                <p>Mentors guide students through finding credible sources, vetting data, and structuring professional deliverable assets like infographics, slide decks, or custom web portfolios.</p>
+            </div>
+            <div class="card">
+                <h3>🚀 Community Impact</h3>
+                <p>Knowledge meets action. An optional extension helps students channel their research into localized awareness campaigns or independent, family-managed community fundraisers.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Launchpad Project. An independent educational mentorship experience.</p>
+    </footer>
+
+</body>
+</html>
